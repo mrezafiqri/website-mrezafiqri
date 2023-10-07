@@ -668,7 +668,9 @@ input.hamburger-check {
 
 .certificate .content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
     gap: 2rem;
 }
 
@@ -1131,6 +1133,9 @@ footer .footer-bottom a {
         font-size: 60%;
     }
 
+    .certificate .content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
@@ -1188,6 +1193,10 @@ footer .footer-bottom a {
 
     .project .swiper-navBtn {
         display: none;
+    }
+
+    .certificate .content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
     .contact .contact-form .form-group .row-form {
