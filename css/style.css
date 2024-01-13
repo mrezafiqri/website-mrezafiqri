@@ -1148,7 +1148,7 @@ footer .footer-bottom a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 790px) {
   html {
     font-size: 55%;
   }
