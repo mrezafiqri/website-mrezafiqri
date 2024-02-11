@@ -178,7 +178,6 @@ input.hamburger-check {
 }
 
 .home .home-title h3 {
-  /* font-size: 2.2rem; */
   font-weight: 400;
   color: var(--black2);
 }
@@ -242,7 +241,7 @@ input.hamburger-check {
 .home aside {
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 2%;
   transform: translateY(-50px);
 }
 
@@ -344,7 +343,6 @@ input.hamburger-check {
 .about .about-group {
   display: flex;
   flex-direction: column;
-  /* gap: 1rem; */
   border-radius: 20px;
   padding: 2rem;
   box-shadow: var(--box-shadow2);
@@ -1138,9 +1136,28 @@ footer .footer-bottom a {
 /* Footer End */
 
 /* Media Queries */
-@media (max-width: 991px) {
+@media (min-width: 1440px) {
+  html {
+    font-size: 75%;
+  }
+
+  .home aside .social-media a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact .contact-sosmed .contact-wrap {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 1024px) {
   html {
     font-size: 60%;
+  }
+
+  .home aside {
+    left: 0px;
   }
 
   .certificate .content {
